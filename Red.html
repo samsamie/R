@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hi Red!</title>
+    <style>
+      body{
+        background-color: firebrick;
+        color:sandybrown;
+        margin-left: 40px;
+      }
+      .cli{
+        background-color: gold;
+        border-style: inset;
+        border-color: purple;
+        color: purple;
+        font-weight: bold;
+        font-size: 15px;
+        cursor: pointer;
+      }
+      .ckh{
+        background-color: gold;
+        border-style: inset;
+        border-color: purple;
+        color: purple;
+        font-weight: bold;
+        font-size: 15px;
+        cursor: pointer;
+      }
+      .ere{
+        background-color: gold;
+        border-style: inset;
+        border-color: purple;
+        color: purple;
+        font-weight: bold;
+        font-size: 15px;
+        cursor: pointer;
+      }
+      .hea{
+        border-radius: 120px;
+        height: 53px;
+        background-color: pink;
+        border-color:seashell;
+        margin-left: 20px;
+        margin-right: 40px;
+        cursor: pointer;
+      }
+      .tai{
+        border-radius: 120px;
+        height: 53px;
+        width: 55px;
+        background-color: orchid;
+        border-color: seashell;
+        cursor: pointer;
+      }
+      .r1{
+        background-color: grey;
+        cursor: pointer;
+        margin-left: 10px;
+      }
+      .r2{
+        background-color: grey;
+        cursor: pointer;
+      }
+      .r3{
+        background-color: gray;
+        cursor: pointer;
+      }
+      .r5{
+        background-color: grey;
+        cursor: pointer;
+        margin-left: 10px;
+      }
+      .r6{
+        background-color: gray;
+        cursor: pointer;
+      }
+      .r7{
+        background-color: grey;
+        cursor: pointer;
+      }
+      .r9{
+        background-color: grey;
+        cursor: pointer;
+        margin-left: 10px;
+      }
+      .r10{
+        background-color: grey;
+        cursor: pointer;
+      }
+      .r11{
+        background-color: grey;
+        cursor: pointer;
+      }
+      .r13{
+        background-color: grey;
+        cursor: pointer;
+        margin-left: 10px;
+      }
+      .r14{
+        width: 24px;
+        cursor: pointer;
+        
+      }
+      .r17{
+        width: 105px;
+        cursor: pointer;
+        margin-left: 10px;
+      }
+      .reds-move{
+        height: 90px;
+        margin-right: 5px;
+        cursor: pointer;
+        border-radius: 50px;
+        border: transparent;
+      }
+      .mes{
+        font-family: Arial;
+        font-weight: bold;
+        font-size: 25px;
+        margin-top: 30px;
+        color:peachpuff;
+        margin-left: 20px;
+      }
+      .who{
+        font-family: Arial;
+        font-weight: bold;
+        font-size: 20px;
+        margin-top: 15px;
+        color: rgb(248, 193, 145);
+      }
+      .were{
+        font-family: Arial;
+        font-weight: bold;
+        font-size: 20px;
+        color:rgb(248, 193, 145)
+      }
+      .calc{
+        font-family: Arial;
+        font-weight: bold;
+        font-size: 25px;
+        color: peachpuff;
+        margin-left: 15px;
+      }
+      .ow{
+        font-family: Arial;
+        font-weight: bold;
+        font-size: 23px;
+        background-color:sienna;
+        border-radius: 20px;
+        border: outset;
+        border-color: black;
+        padding-bottom: 8px;
+        padding-top: 8px;
+        padding-right: 7px;
+        padding-left: 7px;
+        margin-left: 20px;
+        margin-right: 10px;
+        cursor: pointer;
+      }
+      .nu{
+        font-family: Arial;
+        font-weight: bold;
+        font-size: 23px;
+        background-color: white;
+        border-radius: 20px;
+        border: outset;
+        border-color: black;
+        padding-bottom: 8px;
+        padding-top: 8px;
+        padding-right: 7px;
+        padding-left: 7px;
+        margin-right: 10px;
+        cursor: pointer;
+      }
+      .kno{
+        font-family: Arial;
+        font-weight: bold;
+        font-size: 23px;
+        background-color: silver;
+        border-radius: 20px;
+        border: outset;
+        border-color: black;
+        padding-bottom: 8px;
+        padding-top: 8px;
+        padding-right: 7px;
+        padding-left: 7px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="cli" onclick="alert('Hi Red. How are you doing?')">Click Here</button>
+    <p><button class="ckh" onclick=" alert('How is it over there?')">Click Here 2</button></p>
+    <p><button class="ere" onclick="alert('I have a few things to show you in here.')">Click Here 3</button></p>
+    <!-- Code changes are at the bottom. -->
+    <p class="mes">Shall we play a game?</p>
+    <p class="who">Heads or Tails?</p>
+    <p>I will flip a coin. You make your guess if it is heads or tails and click the button you feel like.</p>
+    <button class="hea" onclick=" yourGuess = 'Heads';
+    let coinChance= Math.random();
+    let theCoin = '';
+    
+    if (coinChance>=0 && coinChance<1/2){
+      theCoin = 'Heads';
+      console.log('Heads')
+    } else if (coinChance>=1/2){
+      theCoin = 'Tails'
+      console.log('Tails');
+    }
+    let yourResult= '';
+    if (theCoin=== 'Heads'){
+      yourResult = 'correct :)'
+      console.log(yourResult);
+    } else if(theCoin==='Tails'){
+      yourResult='incorrect :('
+      console.log(yourResult);
+    }
+    alert(`You picked ${yourGuess}. The coin showed ${theCoin}. You are ${yourResult}`)">Heads</button>
+    <button class="tai" onclick="yourGuess = 'Tails';
+    let coinChance= Math.random();
+    let theCoin = '';
+    if (coinChance>=0 && coinChance<1/2){
+     theCoin = 'Heads';
+     console.log('Heads')
+    } else if(coinChance>=1/2 && coinChance<1){
+     theCoin= 'Tails'
+     console.log('Tails')
+    }
+    let yourResult = ''
+    if (theCoin=== 'Heads'){
+      yourResult = 'incorrect :('
+      console.log(yourResult);
+    } else if(theCoin==='Tails'){
+      yourResult='correct :)'
+      console.log(yourResult);
+    }
+    alert(`You picked ${yourGuess}. The coin showed ${theCoin}. You are ${yourResult}`)
+    " >Tails</button>
+
+    <p class="were">Rock Paper Scissors</p>
+    <p>For this one it's you against me. Pick your move and let's go a few rounds.</p>
+    <button class="ow" onclick="yourMove= 'Rock';
+    console.log(yourMove)
+    let randomNumber= Math.random()
+    if(randomNumber>=0 && randomNumber< 1/3){
+      myMove = 'Rock';
+      console.log(myMove);
+    } else if (randomNumber>= 1/3 && randomNumber< 2/3){
+      myMove = 'Paper';
+      console.log(myMove);
+    } else if (randomNumber>=2/3 && randomNumber<1){
+      myMove = 'Scissors';
+      console.log(myMove);
+    }
+    let result=''
+    if (myMove=== 'Rock'){
+      result= 'Tie.'
+      console.log(result);
+    } else if (myMove==='Paper'){
+      result= 'You lose.'
+      console.log(result);
+    }else if (myMove==='Scissors'){
+      result='You win!'
+      console.log(result);
+    }
+    alert(`You picked ${yourMove}. I picked ${myMove}. ${result}`)">
+    Rock</button>
+
+    <button class="nu" onclick="yourMove= 'Paper';
+    console.log(yourMove)
+    let randomNumber = Math.random()
+    if(randomNumber>= 0 && randomNumber < 1/3){
+      myMove= 'Rock'
+      console.log(myMove);
+    } else if (randomNumber>=1/3 && randomNumber< 2/3){
+      myMove = 'Paper'
+      console.log(myMove);
+    } else if (randomNumber>=2/3 && randomNumber<1){
+      myMove = 'Scissors';
+      console.log(myMove);
+    }
+    let result=''
+    if (myMove=== 'Rock'){
+      result ='You win!';
+      console.log(result);
+    } else if (myMove==='Paper'){
+      result='Tie.';
+      console.log(result);
+    }else if (myMove==='Scissors'){
+      result='You lose.'
+      console.log(result)
+    }
+    alert(`You picked ${yourMove}. I picked ${myMove}. ${result}`);">Paper</button>
+
+    <button class="kno" onclick="yourMove= 'Scissors'
+    console.log(yourMove)
+    let randomNumber = Math.random()
+    if(randomNumber>= 0 && randomNumber < 1/3){
+      myMove= 'Rock'
+      console.log(myMove);
+    } else if (randomNumber>=1/3 && randomNumber< 2/3){
+      myMove = 'Paper'
+      console.log(myMove);
+    } else if (randomNumber>=2/3 && randomNumber<1){
+      myMove = 'Scissors';
+      console.log(myMove);
+    }
+    let result=''
+    if (myMove=== 'Rock'){
+      result= 'You lose.'
+      console.log(result);
+    } else if (myMove==='Paper'){
+      result= 'You win!'
+      console.log(result);
+    }else if (myMove==='Scissors'){
+      result='Tie.'
+      console.log(result);
+    }
+    alert(`You picked ${yourMove}. I picked ${myMove}. ${result}`)">Scissors</button>
+    <p class="calc">Calculator</p>
+    <p class="cal"></p>
+    <p>
+      <button class="r1" onclick="
+        updateCalculation('1');
+      ">1</button>
+
+      <button class="r2" onclick="
+        updateCalculation('2');
+      ">2</button>
+
+      <button class="r3" onclick="
+        updateCalculation('3');
+      ">3</button>
+
+      <button class="r4" onclick="
+        updateCalculation(' + ');
+      ">+</button>
+    </p>
+
+    <p>
+      <button class="r5" onclick="
+        updateCalculation('4');
+      ">4</button>
+
+      <button class="r6" onclick="
+        updateCalculation('5');
+      ">5</button>
+
+      <button class="r7" onclick="
+        updateCalculation('6');
+      ">6</button>
+
+      <button class="r8" onclick="
+        updateCalculation(' - ');
+      ">-</button>
+    </p>
+
+    <p>
+      <button class="r9" onclick="
+        updateCalculation('7');
+      ">7</button>
+
+      <button class="r10" onclick="
+        updateCalculation('8');
+      ">8</button>
+
+      <button class="r11" onclick="
+        updateCalculation('9');
+      ">9</button>
+
+      <button class="r12" onclick="
+        updateCalculation(' * ');
+      ">*</button>
+    </p>
+
+    <p>
+      <button class="r13" onclick="
+        updateCalculation('0');
+      ">0</button>
+
+      <button class="r14" onclick="
+        updateCalculation('.');
+      ">.</button>
+
+      <button class="r15" onclick="
+        // Note: eval() takes a string and runs it as code.
+        // Avoid using eval() in real world projects since
+        // it can potentially be given harmful code to run.
+        // Only use eval() for learning purposes.
+        calculation = eval(calculation);
+        displayCalculation();
+
+        // Remember to save the calculation here.
+        localStorage.setItem('calculation', calculation);
+      ">=</button>
+
+      <button class="r16" onclick="
+        updateCalculation(' / ');
+      ">/</button>
+    </p>
+    
+    <p>
+      <button class="r17" onclick="
+        calculation = '';
+        displayCalculation();
+        localStorage.setItem('calculation', calculation);
+      ">Clear</button>
+    </p>
+
+    <script>
+      alert('Welcome, Miss Rediet Lealem.');
+      let calculation = localStorage.getItem('calculation') || '';
+      displayCalculation();
+      
+      function updateCalculation(value) {
+        calculation += value;
+        
+        displayCalculation();
+
+        localStorage.setItem('calculation', calculation);
+      }
+
+      // Optional: you can also create a function in order
+      // to reuse this code.
+        displayCalculation();
+        localStorage.setItem('calculation', calculation);
+      
+      function displayCalculation(){
+        document.querySelector('.cal')
+        .innerHTML= calculation;
+      }
+      let myMove = '';
+      let yourMove= '';
+    </script>
+  </body>
+</html>
